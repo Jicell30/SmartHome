@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F31E8BC28E72283008D242C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31E8BB28E72283008D242C /* Device.swift */; };
+		5F31E8BF28E7231F008D242C /* DevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31E8BE28E7231F008D242C /* DevicesTableViewController.swift */; };
+		5F31E8C228E72401008D242C /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31E8C128E72401008D242C /* DeviceController.swift */; };
+		5F31E8C528E72460008D242C /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31E8C428E72460008D242C /* DeviceTableViewCell.swift */; };
 		F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F027729ACE0021C4E0 /* AppDelegate.swift */; };
 		F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */; };
 		F78B15F827729ACE0021C4E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78B15F627729ACE0021C4E0 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F31E8BB28E72283008D242C /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		5F31E8BE28E7231F008D242C /* DevicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewController.swift; sourceTree = "<group>"; };
+		5F31E8C128E72401008D242C /* DeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
+		5F31E8C428E72460008D242C /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		F78B15ED27729ACE0021C4E0 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78B15F027729ACE0021C4E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +52,38 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		5F31E8BD28E72289008D242C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F31E8BB28E72283008D242C /* Device.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F31E8C028E72327008D242C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F31E8BE28E7231F008D242C /* DevicesTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5F31E8C328E7240E008D242C /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				5F31E8C128E72401008D242C /* DeviceController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		5F31E8C628E7247B008D242C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F31E8C428E72460008D242C /* DeviceTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F78B15E427729ACE0021C4E0 = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +103,12 @@
 		F78B15EF27729ACE0021C4E0 /* SmartHome */ = {
 			isa = PBXGroup;
 			children = (
-				41D325E1283685D800597C30 /* Storyboards */,
 				F78B160D2772A2030021C4E0 /* Resources */,
+				41D325E1283685D800597C30 /* Storyboards */,
+				5F31E8BD28E72289008D242C /* Model */,
+				5F31E8C028E72327008D242C /* ViewControllers */,
+				5F31E8C328E7240E008D242C /* ModelController */,
+				5F31E8C628E7247B008D242C /* Views */,
 			);
 			path = SmartHome;
 			sourceTree = "<group>";
@@ -151,7 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F31E8BC28E72283008D242C /* Device.swift in Sources */,
+				5F31E8C528E72460008D242C /* DeviceTableViewCell.swift in Sources */,
 				F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */,
+				5F31E8C228E72401008D242C /* DeviceController.swift in Sources */,
+				5F31E8BF28E7231F008D242C /* DevicesTableViewController.swift in Sources */,
 				F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
