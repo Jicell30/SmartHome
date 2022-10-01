@@ -38,6 +38,12 @@ func toggleIsOn(device: Device) {
     device.isOn.toggle()
     DeviceController.shared.saveDevices()
 }
+    
+    func deleteDevice(device: Device) {
+        guard let index = devices.firstIndex(of: device) else { return }
+        devices.remove(at: index)
+        saveDevices()
+    }
 
 // persistance
 func saveDevices() {
@@ -52,6 +58,7 @@ func saveDevices() {
     }
 }
 
+    
 func loadDevices() {
     // 1. Get the address to save a file to
     guard let devicesURL = devicesURL else { return }
@@ -67,3 +74,9 @@ func loadDevices() {
 }
 }
 
+extension Device: Equatable {
+    static func == (lhs: Device, rhs: Device) -> Bool {
+      return lhs.name == rhs.name && lhs.isOn == lhs.isOn
+       
+    }
+}
